@@ -40,7 +40,7 @@ jobs:
       - name: phpstan
         run: |
           cd api
-          ./vendor/bin/phpstan analyse --memory-limit=1G
+          ./vendor/bin/phpstan analyse --memory-limit=1G app/
       - name: phpinsights
         run: |
           php artisan insights --no-interaction \
