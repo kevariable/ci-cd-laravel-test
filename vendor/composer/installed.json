@@ -67,7 +67,5 @@
         }
     ],
     "dev": true,
-    "dev-package-names": [
-        "phpstan/phpstan"
-    ]
+    "dev-package-names": []
 }

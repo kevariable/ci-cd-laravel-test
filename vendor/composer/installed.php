@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '9d143cebf5c935ffe45934e7cc5a1a219d9c3555',
+        'reference' => '2d42d8cb51beadc697415439f8947a1489a8f6ff',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '9d143cebf5c935ffe45934e7cc5a1a219d9c3555',
+            'reference' => '2d42d8cb51beadc697415439f8947a1489a8f6ff',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -26,7 +26,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpstan/phpstan',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
     ),
 );
