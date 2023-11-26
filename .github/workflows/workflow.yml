@@ -21,6 +21,8 @@ jobs:
         with:
           php-version: '8.1'
       - uses: actions/checkout@v3
+        with:
+          repo: kevariable/ci-cd-laravel-test
       - name: Copy .env
         run: |
           cd api
@@ -42,12 +44,7 @@ jobs:
           cd api
           ./vendor/bin/phpstan analyse --memory-limit=1G app/
       - name: phpinsights
-        run: |
-          cd api
-          php artisan insights --no-interaction \
-            --min-quality=90 --min-complexity=80 \
-            --min-architecture=90 --min-style=90 \
-            --ansi --format=github-action
+        run: cd api && ./cicd/run-php-insight.sh
       - name: Run tests
         run: |
           cd api
